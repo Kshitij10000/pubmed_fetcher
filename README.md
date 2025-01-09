@@ -13,6 +13,7 @@
 - [Options](#options)
 - [Development Notes](#development-notes)
 - [Tools and Libraries](#tools-and-libraries)
+- [Links](#links)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -129,6 +130,13 @@ Poetry: For dependency management, packaging, and virtual environment.
 python-dotenv: For loading environment variables from a .env file.
 
 argparse: For parsing command-line arguments.
+
+# Links
+
+https://biopython.org/docs/dev/Tutorial/chapter_entrez.html
+https://stackoverflow.com/questions/17409107/obtaining-data-from-pubmed-using-python
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6821292/
+https://www.ncbi.nlm.nih.gov/books/NBK25499/
 
 # Contributing
 We welcome contributions! If you'd like to contribute to the project, please follow these steps:
