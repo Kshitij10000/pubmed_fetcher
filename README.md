@@ -52,19 +52,13 @@ pubmed_fetcher/
     cd pubmed_fetcher
     ```
 
-2.  **Install Poetry if you haven't already:**
-
-    ```bash
-    curl -sSL https://install.python-poetry.org | python3 -
-    ```
-
-3.  **Install dependencies using Poetry:**
+2.  **Install dependencies using Poetry:**
 
     ```bash
     poetry install
     ```
 
-4.  **Activate the virtual environment:**
+3.  **Activate the virtual environment:**
 
     ```bash
     poetry shell
@@ -97,29 +91,37 @@ With the environment set up and activated, you can run the tool using Poetry's s
 
 ```bash
 poetry run get-papers-list "your PubMed query here" [options]
+```
 Use code with caution.
 Example:
 
-poetry run get-papers-list "\"Cardiovascular Diseases\"[MeSH Terms] AND \"Prevention & control\"[Subheading]" -f results.csv
+```bash
+poetry run get-papers-list "heart attack OR myocardial infarction" -f heart_attack_or_mi.csv
+```
+```bash
+poetry run get-papers-list "aspirin NOT children" -f aspirin_not_children.csv
+```
+
 Use code with caution.
-Bash
-Options
+
+## Options
+
 -d, --debug: Enable debug mode to print detailed debug information during execution.
 
 -f FILE, --file FILE: Specify a filename to save the results as a CSV file. If omitted, the output is printed to the console.
 
 -h, --help: Display usage instructions.
 
-Development Notes
+# Development Notes
+
 Environment Security: Sensitive credentials such as EMAIL and API_KEY are stored in a .env file and loaded using the python-dotenv library. This approach keeps credentials out of the source code.
 
 Virtual Environment: Poetry automatically creates and manages a virtual environment for your project to isolate dependencies and configuration.
 
 Testing: Use poetry run get-papers-list --help to check that the command-line interface works as expected.
 
-Publishing: To publish the module to TestPyPI, follow the Publishing Packages guide after ensuring all functionality is verified locally.
+# Tools and Libraries
 
-Tools and Libraries
 Biopython: For interacting with the PubMed API.
 
 Poetry: For dependency management, packaging, and virtual environment.
@@ -128,7 +130,7 @@ python-dotenv: For loading environment variables from a .env file.
 
 argparse: For parsing command-line arguments.
 
-Contributing
+# Contributing
 We welcome contributions! If you'd like to contribute to the project, please follow these steps:
 Fork the repository.
 Create a new branch for your feature or bug fix.
@@ -136,5 +138,5 @@ Make your changes and commit them with clear, concise messages.
 Push your branch to your fork.
 Submit a pull request to the main repository.
 
-License
+# License
 This project is licensed under the MIT License.
