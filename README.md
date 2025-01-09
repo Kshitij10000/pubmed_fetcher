@@ -26,17 +26,19 @@
 -   **Cross-Platform:** Works on any system that supports Python and Poetry.
 
 ## Project Structure
-Use code with caution.
-Markdown
+
+
+```code
 pubmed_fetcher/
-├── .env # Environment variables file (not tracked by Git)
-├── .gitignore # Files to ignore in Git (e.g., .env)
+├── .env # Environment variables file (create own file)
+├── .gitignore # Files to ignore in Git
 ├── paper_fetcher/ # Core functionality module
 │ ├── init.py
 │ └── fetcher.py # Module containing core functionality
 ├── cli.py # Command-line interface script
 ├── pyproject.toml # Poetry project configuration
 └── README.md # Project documentation
+```
 
 ## Requirements
 
@@ -92,7 +94,7 @@ With the environment set up and activated, you can run the tool using Poetry's s
 ```bash
 poetry run get-papers-list "your PubMed query here" [options]
 ```
-Use code with caution.
+
 Example:
 
 ```bash
@@ -101,8 +103,6 @@ poetry run get-papers-list "heart attack OR myocardial infarction" -f heart_atta
 ```bash
 poetry run get-papers-list "aspirin NOT children" -f aspirin_not_children.csv
 ```
-
-Use code with caution.
 
 ## Options
 
