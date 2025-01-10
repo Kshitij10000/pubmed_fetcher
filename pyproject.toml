@@ -1,17 +1,18 @@
 [tool.poetry]
-name = "pubmed_fetcher"
-version = "0.1.0"
+name = "pubmed_fetcher_article"
+version = "0.1.5"
 description = "Fetch research papers from PubMed based on a query."
-authors = ["ruchir sarve <ruchirsarve@gmail.com>"]
+authors = ["kshitij sarve <kshitijsarve2001@gmail.com>"]
+readme = "README.md"
 packages = [{ include = "paper_fetcher" }]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-biopython = "^1.79"
-python-dotenv = "^0.21.0"
+python = ">=3.9,<3.13"
+biopython = "1.84"
+python-dotenv = "1.0.1"
 
 [tool.poetry.scripts]
-get-papers-list = "cli:main"
+get-papers-list = "paper_fetcher.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

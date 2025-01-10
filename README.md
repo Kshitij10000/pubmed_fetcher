@@ -48,24 +48,47 @@ pubmed_fetcher/
 
 ## Installation
 
-1.  **Clone the repository:**
+# Using Github
+   1.  **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/yourusername/pubmed_fetcher.git
-    cd pubmed_fetcher
-    ```
+      ```bash
+      git clone https://github.com/yourusername/pubmed_fetcher.git
+      cd pubmed_fetcher
+      ```
 
-2.  **Install dependencies using Poetry:**
+   2.  **Install dependencies using Poetry:**
 
-    ```bash
-    poetry install
-    ```
+      ```bash
+      poetry install
+      ```
 
-3.  **Activate the virtual environment:**
+   3.  **Activate the virtual environment:**
 
-    ```bash
-    poetry shell
-    ```
+      ```bash
+      poetry shell
+      ```
+
+# Using Pip
+   1.  Install using pip:
+
+      ```bash
+      pip install -i https://test.pypi.org/simple/ pubmed_fetcher_article
+      ```
+      ## Note
+
+      Sometimes biopython or python-dotenv wont get install with the library. So install them manually.
+
+      ``` bash
+      pip install biopython==1.84
+      ```
+      ```bash
+      pip install python-dotenv==1.0.1
+      ```
+      Again install pubmed_fetcher_article
+
+      ```bash
+      pip install -i https://test.pypi.org/simple/ pubmed_fetcher_article
+      ```
 
 ## Configuration
 
