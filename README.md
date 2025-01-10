@@ -52,7 +52,7 @@ pubmed_fetcher/
 1.  **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/pubmed_fetcher.git
+git clone https://github.com/Kshitij10000/pubmed_fetcher.git
 cd pubmed_fetcher
 ```
 
